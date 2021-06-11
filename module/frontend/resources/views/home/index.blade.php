@@ -13,9 +13,9 @@
                 <div class="list_latest">
                     <ul>
                         <li><a href="{{route('frontend::doctor.search.get')}}">{{trans('frontend.find_doctor')}}</a></li>
-                        <li><a href="#">{{trans('frontend.visitor_guide')}}</a></li>
+                        <li><a href="{{ ($lang=='vn') ? link_action('blog/huong-dan') : link_action('blog/patient-instructions')}}">{{trans('frontend.visitor_guide')}}</a></li>
                         <li><a href="{{route('frontend::donate.index.get')}}">{{trans('frontend.giving_to')}}</a></li>
-                        <li><a href="#">{{trans('frontend.charity_activities')}}</a></li>
+                        <li><a href="{{ ($lang=='vn') ? link_action('blog/hoat-dong-tu-thien') : link_action('blog/charity-activities')}}">{{trans('frontend.charity_activities')}}</a></li>
                         <li><a href="{{route('frontend::diseases.topic.get')}}">{{trans('frontend.diseases_conditions')}}</a></li>
                         <li><a href="{{route('frontend::home.contact.get')}}">{{trans('frontend.contact_bm')}}</a></li>
                     </ul>
@@ -29,7 +29,8 @@
 <section class="latest_blog pdt100 pdb50">
     <div class="container">
         <p class="catcom_bm">{{trans('frontend.news_event')}}.</p>
-        <h2 class="title_latest_blog">{{trans('frontend.news_tips')}} <span><a href="#">{{trans('frontend.view_all')}}</a></span></h2>
+        <h2 class="title_latest_blog">{{trans('frontend.news_tips')}}
+            <span><a href="{{ ($lang=='vn') ? link_action('blog/tin-tuc-su-kien') : link_action('blog/news-and-event')}}">{{trans('frontend.view_all')}}</a></span></h2>
         <div class="row">
             <div class="col-lg-8">
 

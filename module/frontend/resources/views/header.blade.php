@@ -75,7 +75,7 @@
                     <ul>
                         <li><a href="{{route('frontend::home.contact.get')}}">{{trans('frontend.contact_bm')}}</a></li>
                         <li><a href="{{route('frontend::doctor.search.get')}}">{{trans('frontend.find_doctor')}}</a></li>
-                        <li><a href="#">{{trans('frontend.career_on')}}</a></li>
+                        <li><a href="{{ ($lang=='vn') ? link_action('blog/tuyen-dung') : link_action('blog/careers')}}">{{trans('frontend.career_on')}}</a></li>
                     </ul>
                 </div>
             </div>

@@ -2,6 +2,10 @@
 
 use Menu\Models\Menu;
 
+function link_action($url){
+    return env('APP_URL').'/'.$url;
+}
+
 function getAllmenu(){
     $lang = session('lang');
     $menuWise = Menu::orderBy('sort_order','asc')
