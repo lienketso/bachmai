@@ -1,0 +1,104 @@
+@media (min-width: 768px){
+	.navbar-nav>li{
+	width: calc(100%/6);
+	}
+	.list_topic ul li{
+		width: 50%;
+	}
+	.check_list_bv ul li{
+		width: 50%;
+	}
+    .no-desktop{
+        display: none;
+    }
+    .flex_one{
+        display: flex;
+    }
+    .list_latest ul li a{
+        font-size: 20px;
+    }
+    .pdt100{
+        padding-top: 100px;
+    }
+    .title_latest_blog{
+        font-size: 44px;
+    }
+    .title_latest_video {
+        font-size: 54px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 767px){
+    .img_founder img{
+        height: 60px;
+    }
+    .mobile_on_head{
+        padding: 15px
+    }
+    .lang_mobile a{
+        padding-right: 5px;
+    }
+    .form-title{
+        display: block;
+        padding-bottom: 15px;
+    }
+    .form_find_detail{
+        display: block;
+        margin: 0;
+    }
+    .form-title select{
+        width: 100%;
+        border-left: 1px solid #ccc !important;
+    }
+    .form-title input[type="text"]{
+        width: 100%;
+    }
+    .popular_video{
+        padding-top: 30px;
+    }
+    .title_latest_video {
+        font-size: 33px;
+        padding-bottom: 10px;
+    }
+    .recent_blog{
+        padding-top: 30px;
+    }
+    .themesion-box-desc-text{
+        padding-bottom: 15px;
+    }
+    .title_latest_blog{
+        font-size: 34px;
+    }
+    .pdt100{
+        padding-top: 50px;
+    }
+    .list_topic ul li{
+		width: 100%;
+	}
+
+    .no-mobile{
+        display: none;
+    }
+    .logo_mobile{
+        position: absolute;
+        right: 10px;
+        top: 1px;
+    }
+    .tool_top{
+        padding: 0;
+    }
+    .flex_one{
+
+    }
+    .list_latest ul{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .list_latest{
+        padding-top: 20px;
+    }
+    .list_latest ul li a{
+        font-size: 17px;
+    }
+}

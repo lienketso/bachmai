@@ -1,0 +1,77 @@
+.title_head{
+    color: #666;
+    padding: 10px 0;
+    font-weight: 500;
+}
+ul.tree1{
+    margin: 0;
+    padding: 0;
+}
+ul.tree1 li{
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #bdc3d1;
+    margin:15px;
+    position: relative;
+}
+ul.tree1 li span{
+    position: absolute;
+    right: 10px;
+}
+ul.tree1 li span a{
+    border: 1px solid #259dab;
+    padding: 2px 5px;
+    margin-left: 5px;
+}
+.list_menu_home{
+    padding: 0 20px;
+}
+.table-options > li > a{
+    padding: 3px 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.leftpanel-profile .media-object{
+    height: 48px;
+}
+.alert_an{
+    padding: 3px 10px;
+    background: #c00;
+    border-radius: 4px;
+    margin-left: 5px;
+    color: #fff;
+}
+.custom-file-input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.list_dinh_kem {
+    display: inline-flex;
+}
+.img_att_list {
+    width: 20%;
+    padding: 2px;
+    border: 1px solid #ccc;
+    margin: 10px 5px;
+    position: relative;
+    float: left;
+    height: 80px;
+}
+.img_att_list .img_at {
+    width: 100%;
+    height: 100%;
+}
+.img_att_list span {
+    cursor: pointer;
+    position: absolute;
+    right: -5px;
+    top: -10px;
+}
+.namego h4{
+    text-transform: none;
+    font-size: 14px;
+}
+.namego ul{
+    padding: 0 15px;
+}
