@@ -64,7 +64,7 @@
             </div>
             <div class="col-lg-4 no-mobile">
                 <div class="search_home">
-                    <form method="get">
+                    <form method="get" action="{{route('frontend::search')}}">
                         <input type="text" class="txt_keyword" name="keyword" placeholder="{{trans('frontend.search_keyword')}}">
                         <button type="submit" class="btnSearch"></button>
                     </form>

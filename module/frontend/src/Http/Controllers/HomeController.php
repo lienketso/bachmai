@@ -16,6 +16,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Media\Repositories\MediaRepository;
 use Newsletter\Repositories\NewsletterRepository;
+use Post\Models\Post;
 use Post\Repositories\PostRepository;
 use Product\Repositories\CatproductRepository;
 use Transaction\Http\Requests\TransactionCreateRequest;
@@ -95,6 +96,27 @@ class HomeController extends BaseController
             'pageAbout'=>$pageAbout,
             'logoFooter'=>$logoFooter
         ]);
+    }
+
+    public function search(Request $request, PostRepository $postRepository){
+        $keyword = $request->get('keyword');
+        $q = Post::query();
+        if(!is_null($keyword)){
+            $q->where('name','LIKE','%'.$keyword.'%');
+        }
+        $data = $q->orderBy('created_at','desc')
+            ->where('lang_code',$this->lang)
+            ->where('status','active')->paginate(20);
+
+        //Các bài viết mới nhất
+        $popularPost = $postRepository->scopeQuery(function($e) {
+            return $e->orderBy('created_at','desc')
+                ->where('status','active')
+                ->where('lang_code',$this->lang)
+                ->where('post_type','blog');
+        })->limit(6);
+
+        return view('frontend::home.search',['data'=>$data,'popularPost'=>$popularPost]);
     }
 
     public function contact(){

@@ -28,7 +28,7 @@
                            <div class="intro_blog_item">
                                <h3><a href="{{route('frontend::post.detail.get',$d->slug)}}">{{$d->name}}</a></h3>
                                <div class="time_post_item">
-                                   <span><i class="fa fa-clock-o"></i> 03 tháng 06 2021</span>
+                                   <span><i class="fa fa-clock-o"></i> {{stringDate($d->created_at)}}</span>
                                    <span><i class="fa fa-user"></i> admin</span>
                                    <span><i class="fa fa-eye"></i> {{$d->count_view}} lượt xem</span>
                                </div>
