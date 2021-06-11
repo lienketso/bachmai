@@ -618,6 +618,7 @@ ol.acces-alpha li a:hover{
 }
 .info_bm p{
 	color: #fff;
+    padding-top: 10px;
 }
 .f-social-box ul{
 	list-style: none;
@@ -1484,4 +1485,8 @@ ol.acces-alpha li a:hover{
 .success_donate p{
     color: #000;
     padding-top: 20px;
+}
+.navbar-collapse{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }

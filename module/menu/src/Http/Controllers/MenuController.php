@@ -66,9 +66,12 @@ class MenuController extends BaseController
     function getEdit($id){
         $data = $this->model->find($id);
         //danh sách danh mục bài viết
-        $listBlog = $this->blog->orderBy('sort_order')->all();
+        $listBlog = $this->blog->orderBy('sort_order','asc')
+            ->where('lang_code',$this->langcode)
+            ->where('type','blog')
+            ->all();
         //danh sách trang tĩnh
-        $listPage = $this->page->findWhere(['post_type'=>'page'])->all();
+        $listPage = $this->page->findWhere(['post_type'=>'page','lang_code'=>$this->langcode])->all();
 
         $menuModel = $this->model;
         return view('wadmin-menu::edit',['data'=>$data,
