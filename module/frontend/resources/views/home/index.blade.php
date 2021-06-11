@@ -6,7 +6,7 @@
         <div class="row flex_one">
             <div class="col-lg-6">
                 <div class="img_latest">
-                    <a href="#"><img src="{{public_url('frontend/assets/img/mask.jpg')}}" alt=""></a>
+                    <a href="#"><img src="{{public_url('frontend/assets/img/banner_bachmai.jpg')}}" alt=""></a>
                 </div>
             </div>
             <div class="col-lg-6">
