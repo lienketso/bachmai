@@ -106,3 +106,11 @@ Route::group(['prefix'=>'video'],function(Router $router){
     $router->get('{slug}','VideoController@detail')
         ->name('frontend::video.detail.get');
 });
+
+
+Route::get('/sitemap.xml', 'SitemapController@index');
+Route::get('/sitemap.xml/category', 'SitemapController@category');
+Route::get('/sitemap.xml/post', 'SitemapController@post');
+Route::get('/sitemap.xml/diseases', 'SitemapController@diseases');
+Route::get('/sitemap.xml/doctor', 'SitemapController@doctor');
+Route::get('/sitemap.xml/video', 'SitemapController@video');
