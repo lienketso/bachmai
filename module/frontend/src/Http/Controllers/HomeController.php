@@ -50,7 +50,7 @@ class HomeController extends BaseController
                 ->where('post_type','blog')
                 ->where('display',2)
                 ->where('lang_code',$this->lang);
-        })->limit(2);
+        })->limit(4);
 
         $homeBlog = $postRepository->scopeQuery(function($e){
            return $e->orderBy('created_at','desc')->where('status',1)
