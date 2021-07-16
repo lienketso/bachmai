@@ -72,7 +72,8 @@ class HomeController extends BaseController
                 ->get(['name','slug']);
         })->limit(9);
         //video clips home
-        $videoHot = $postRepository->findWhere(['post_type'=>'video','display'=>2,'lang_code'=>$this->lang])->first();
+        $videoHot = $postRepository->orderBy('created_at','desc')
+            ->findWhere(['post_type'=>'video','display'=>2,'lang_code'=>$this->lang])->first();
         $videoHome = $postRepository->scopeQuery(function ($e) {
             return $e->orderBy('created_at','desc')
                 ->where('lang_code',$this->lang)
