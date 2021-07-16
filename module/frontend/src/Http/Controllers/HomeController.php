@@ -58,7 +58,7 @@ class HomeController extends BaseController
                ->where('post_type','blog')
                ->where('display',1)
                ->get();
-        })->limit(5);
+        })->limit(6);
 
         $allTopic = $this->cat
             ->orderBy('sort_order','asc')
