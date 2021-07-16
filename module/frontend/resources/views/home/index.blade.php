@@ -55,7 +55,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <h3 class="thsn-post-title"><a href="{{route('frontend::post.detail.get',$d->slug)}}">{{$d->name}}</a></h3>
+                                <h3 class="thsn-post-title"><a href="{{route('frontend::post.detail.get',$d->slug)}}">{{cut_string($d->name,60)}}</a></h3>
                                 <div class="themesion-box-desc">
                                     <div class="themesion-box-desc-text">
                                         {{cut_string($d->description,100)}}
