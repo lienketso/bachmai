@@ -111,6 +111,18 @@
                                    value="{{$setting->getSettingMeta('site_instagram')}}"
                                    placeholder="Link instagram">
                         </div>
+                        <div class="form-group">
+                            <label>Mã theo dõi google Analytics</label>
+                            <textarea id="" name="google_analytic"
+                                      class="form-control" rows="4"
+                                      placeholder="Copy mã google vào đây">{{$setting->getSettingMeta('google_analytic')}}</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Mã theo dõi Facebook picxel</label>
+                            <textarea id="" name="facebook_pic"
+                                      class="form-control" rows="4"
+                                      placeholder="Copy mã google vào đây">{{$setting->getSettingMeta('facebook_pic')}}</textarea>
+                        </div>
 
                         <div class="form-group">
                             <button class="btn btn-primary">Lưu lại</button>
