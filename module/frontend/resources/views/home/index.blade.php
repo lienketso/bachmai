@@ -226,7 +226,7 @@
             <div class="col-lg-7">
                 <div class="video_hot">
                     <div class="iframe_video">
-                        <iframe width="560" height="350" src="https://www.youtube.com/embed/{{youtube_id($videoHot->description)}}"
+                        <iframe width="560" height="450" src="https://www.youtube.com/embed/{{youtube_id($videoHot->description)}}"
                                 title="{{$videoHot->name}}"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
