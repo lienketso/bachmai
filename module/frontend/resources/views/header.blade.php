@@ -38,7 +38,6 @@
     {{--    Mã google analytic--}}
     {!! $setting['google_analytic'] !!}
     {{--    Mã facebook pixel--}}
-    {!! $setting['facebook_pic'] !!}
 </head>
 <body class="utf_skin_area">
 
